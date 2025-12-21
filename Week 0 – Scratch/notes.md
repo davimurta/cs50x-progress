@@ -206,3 +206,142 @@ but a combination of:
 
 Again, meaning comes from interpretation,
 not from the data itself.
+
+## Algorithms – Growth and efficiency
+
+This graph compares how different algorithms scale
+as the size of the problem increases.
+
+- O(n): processes one item at a time
+- O(n/2): processes more items per step, but still grows linearly
+- O(log₂ n): reduces the problem size by half at each step
+
+The key insight is that O(n/2) is still O(n),
+because constants do not change how an algorithm scales.
+
+O(log₂ n) is fundamentally different.
+Instead of solving the entire problem,
+it repeatedly eliminates half of the remaining data.
+
+Using the book example:
+
+- O(n): checking page by page
+- O(n/2): checking multiple pages per step
+- O(log₂ n): opening the book in the middle and discarding half each time
+
+This explains why logarithmic algorithms scale much better
+as the input size grows.
+
+### Binary Search – Dividing the problem
+
+Binary search is an algorithm used to find an element
+in a **sorted** list.
+
+Instead of checking each element one by one,
+binary search repeatedly divides the search space in half.
+
+The process works as follows:
+
+1. Look at the middle element of the list
+2. Compare it with the target value
+3. If the target is smaller, discard the right half
+4. If the target is larger, discard the left half
+5. Repeat until the element is found or the list is empty
+
+Each step removes half of the remaining data.
+Because of this, binary search runs in **O(log₂ n)** time.
+
+A practical example is searching for a word in a dictionary:
+instead of reading every word,
+you open the book in the middle and discard half of the pages
+based on alphabetical order.
+
+An important requirement is that the data must be sorted.
+Without ordering, binary search cannot be applied.
+
+### Big-O Notation – Measuring algorithm growth
+
+Big-O notation is used to describe how an algorithm
+scales as the size of its input increases.
+
+It does not measure actual execution time.
+Instead, it focuses on the *growth rate* of the algorithm,
+ignoring hardware differences and small constant factors.
+
+Big-O answers the question:
+What happens to the algorithm when the input size grows?
+
+Common examples:
+
+- O(1): constant time, input size does not affect performance
+- O(n): linear growth, work increases proportionally to input
+- O(log n): logarithmic growth, problem size is reduced each step
+- O(n²): quadratic growth, common with nested loops
+
+An important rule is that constants do not matter in Big-O:
+
+- O(n/2) → O(n)
+- O(2n) → O(n)
+
+This is because Big-O describes long-term behavior,
+not small optimizations.
+
+Big-O helps compare algorithms based on scalability,
+not speed on a specific machine.
+
+## Pseudocode – Describing logic without syntax
+
+Pseudocode is a way to describe an algorithm
+using human-readable steps instead of a real programming language.
+
+It focuses on *logic*, not syntax.
+There is no strict standard, and it does not need to compile.
+
+The goal of pseudocode is to:
+
+- think clearly about a solution
+- communicate ideas
+- plan an algorithm before coding
+
+Because it is language-agnostic,
+pseudocode can later be translated into any programming language.
+
+Example of pseudocode logic:
+
+- start
+- repeat steps
+- make decisions
+- stop
+
+Pseudocode helps separate problem solving
+from language-specific details.
+
+## Artificial Intelligence – Machines making decisions
+
+Artificial Intelligence (AI) refers to systems
+that can perform tasks which normally require human intelligence.
+
+Instead of following fixed instructions,
+AI systems often make decisions based on data,
+rules, or learned patterns.
+
+At a fundamental level, AI is built on:
+
+- algorithms
+- data
+- representation
+- interpretation
+
+Machine behavior is not “intelligent” by itself.
+It is the result of carefully designed logic
+combined with large amounts of data.
+
+In many cases, AI systems:
+
+- evaluate possibilities
+- assign values or probabilities
+- choose the best option based on defined criteria
+
+This reinforces an important idea from computer science:
+even complex behaviors emerge from simple rules
+applied at scale.

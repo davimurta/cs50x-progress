@@ -345,3 +345,36 @@ In many cases, AI systems:
 This reinforces an important idea from computer science:
 even complex behaviors emerge from simple rules
 applied at scale.
+
+## Scratch – Visual thinking and fundamentals
+
+Scratch is used in CS50 as an introduction to computational thinking,
+not as a programming language to master.
+
+Through simple visual blocks, it introduces core concepts such as:
+
+- events
+- loops
+- conditionals
+- state
+- abstraction
+
+Examples like "Hello World" and "Hello You" demonstrate
+basic input and output.
+
+"Meow" introduces event-driven behavior,
+where actions happen in response to user interaction.
+
+Abstractions show how complex behavior can be broken down
+into reusable blocks, similar to functions in traditional languages.
+
+Conditionals allow programs to make decisions
+based on different situations.
+
+Projects like "OscarTime" and "Ivy’s Hardest Game"
+combine all these ideas into a single system,
+highlighting how real programs manage state and flow over time.
+
+The key takeaway is that programming is about
+structuring logic and behavior,
+not about syntax or tools.

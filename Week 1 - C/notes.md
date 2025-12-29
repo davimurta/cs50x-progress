@@ -89,3 +89,126 @@ This reinforces the idea that programs are based on:
 - input
 - processing
 - output
+
+## From Scratch to C
+
+Scratch and C are very different, but the logic behind them is the same.
+
+What changes:
+
+- Scratch hides complexity
+- C exposes details like syntax, memory and compilation
+
+What stays the same:
+
+- sequence
+- conditionals
+- loops
+- variables
+- input and output
+
+C forces you to be more precise.
+This helps understand how computers really work.
+
+## Header Files
+
+Header files provide information about functions before we use them.
+
+For example:
+
+- `#include <stdio.h>` tells the compiler that `printf` exists
+
+Without header files:
+
+- the compiler would not know the function’s name
+- the program would fail to compile
+
+Header files define:
+
+- function signatures
+- types
+- constants
+
+They do not contain the full implementation, only the interface.
+
+## CS50 Manual Pages
+
+CS50 provides manual pages similar to Unix `man` pages.
+
+They are used to:
+
+- understand how a function works
+- see required header files
+- learn parameters and return values
+
+Using manual pages teaches:
+
+- how to read documentation
+- how to rely less on tutorials
+- how to learn independently
+
+Documentation is a core skill in programming.
+
+## Hello, You
+
+Hello, You expands Hello, World by introducing input.
+
+The program:
+
+- asks the user for input
+- stores it in a variable
+- outputs a personalized message
+
+This introduces:
+
+- variables
+- user input
+- interaction with the program
+
+Now the program responds to the user instead of only printing text.
+
+## Terminal Commands
+
+The terminal (CLI) allows direct interaction with the operating system.
+
+Common commands used in CS50:
+
+- `ls` lists files in a directory
+- `cd` changes the current directory
+- `mkdir` creates a new directory
+- `rm` removes files
+- `clear` clears the terminal screen
+
+Using the terminal helps understand:
+
+- how files are organized
+- how programs are executed
+- how developers work without a GUI
+
+The terminal is more powerful and precise than graphical interfaces.
+
+## Types
+
+In C, every variable has a type.
+
+A type defines:
+
+- what kind of data is stored
+- how much memory is allocated
+- how the data is interpreted
+
+Examples:
+
+- `int` stores integers
+- `float` stores decimal numbers
+- `char` stores a single character
+- `string` stores text (CS50 abstraction)
+
+Types matter because:
+
+- the computer needs to know how to read the bits
+- operations depend on the type
+- mistakes can cause bugs or crashes
+
+C is strict about types.
+This helps prevent ambiguity but requires more care.
